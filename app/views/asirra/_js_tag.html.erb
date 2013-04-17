@@ -1,5 +1,31 @@
 <%= javascript_include_tag "http://challenge.asirra.com/js/AsirraClientSide.js" %>
 <%= javascript_tag do %>
-  asirraState.SetEnlargedPosition("<%= @asirra_enlarged_position %>")
-  asirraState.SetCellsPerRow("<%= @asirra_cells_per_row %>")
+  asirraState.SetEnlargedPosition("<%= @asirra_enlarged_position %>");
+  asirraState.SetCellsPerRow("<%= @asirra_cells_per_row %>");
+
+  var asirra_passthrough = false;
+
+  function VerifyAsirra(form)
+  {
+    if (asirra_passthrough) {
+      return true;
+    }
+    Asirra_CheckIfHuman(function(isHuman) {
+      AsirraChecked(form, isHuman);
+    });
+    return false;
+  }
+  
+  function AsirraChecked(form, isHuman)
+  {
+    if (!isHuman)
+    {
+      $(form).find("#asirra-error").html("You weren't accurate enough. Please only choose pictures of cats!")
+    }
+    else
+    {
+      asirra_passthrough = true;
+      form.submit();
+    }
+  }
 <% end %>
