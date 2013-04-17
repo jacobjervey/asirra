@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Asirra::VERSION
   spec.authors       = ["Jacob Jervey"]
   spec.email         = ["jacob.jervey@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Implements view and form helpers for the ASIRRA CAPTCHA system for Rails-based websites}
+  spec.summary       = %q{View and form helpers for ASIRRA}
+  spec.homepage      = "https://github.com/jacobjervey/asirra"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

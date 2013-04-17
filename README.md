@@ -1,6 +1,6 @@
 # Asirra
 
-TODO: Write a gem description
+This is a simple gem that assists you in implementing the ASIRRA CAPTCHA system from Microsoft into your Rails application.
 
 ## Installation
 
