@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Asirra::VERSION
   spec.authors       = ["Jacob Jervey"]
   spec.email         = ["jacob.jervey@gmail.com"]
-  spec.description   = %q{Implements view and form helpers for the ASIRRA CAPTCHA system for Rails-based websites}
-  spec.summary       = %q{View and form helpers for ASIRRA}
+  spec.description   = %q{Implements view helpers for the ASIRRA CAPTCHA system for Rails-based websites}
+  spec.summary       = %q{View helpers for ASIRRA}
   spec.homepage      = "https://github.com/jacobjervey/asirra"
   spec.license       = "MIT"
 
