@@ -1,5 +1,2 @@
 require "asirra/version"
-
-module Asirra
-  # Your code goes here...
-end
+require "asirra/railtie" if defined? Rails
